@@ -1,0 +1,18 @@
+<%= form_with scope: :pages, url: pages_path, local: true do |form| %>
+<p>
+  <%= form.label :title %><br>
+  <%= form.text_field :title %><br>
+</p>
+<p>
+  <%= form.label :content %><br>
+  <%= form.text_area :content %>
+</p>
+<p>
+  <%= form.label :tags %>
+  <%= form.select :tags, ["happy", "sad"], include_blank: "Please select tag" %>
+</p>
+
+<p>
+  <%= form.submit %>
+</p>
+<% end %>

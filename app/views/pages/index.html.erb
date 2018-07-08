@@ -1,0 +1,7 @@
+<h1>Pages</h2>
+<%= link_to("Write in Diary", new_page_path) %>
+<p>
+  <% @pages.each do |page| %>
+    <%= link_to("#{page.created_at} #{page.title}", page_path(page)) %> <%= link_to("Delete", page_path(page), method: :delete) %><br>
+  <% end %>
+</p>
