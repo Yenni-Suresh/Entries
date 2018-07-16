@@ -10,7 +10,8 @@
     "webpack": "^4.15.1"
   },
   "scripts": {
-    "start": "webpack --config dev.config.js"
+    "postinstall": "webpack --config prod.config.js",
+    "webpack": "webpack --config dev.config.js -w"
   },
   "devDependencies": {
     "webpack-cli": "^3.0.8"
