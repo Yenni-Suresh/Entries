@@ -1,5 +1,18 @@
 {
   "name": "entry",
   "private": true,
-  "dependencies": {}
+  "dependencies": {
+    "babel-loader": "^7.1.5",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "react": "^16.4.1",
+    "webpack": "^4.15.1"
+  },
+  "scripts": {
+    "start": "webpack --config dev.config.js"
+  },
+  "devDependencies": {
+    "webpack-cli": "^3.0.8"
+  }
 }

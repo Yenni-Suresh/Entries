@@ -28,3 +28,6 @@
 
 # Ignore master key for decrypting credentials and more.
 /config/master.key
+
+# Ignore babel converted files
+/app/assets/javascripts/views
